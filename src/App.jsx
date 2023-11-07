@@ -27,7 +27,7 @@ const siteProps = {
   name: "Fahad Aziz Khan",
   title: "Electrical Engineer and Machine Learning Expert",
   email: "fahad_aziz10@yahoo.com",
-  gitHub: "github.com/fahad-aziz10",
+  gitHub: "fahad-aziz10",
   instagram: "",
   linkedIn: "fahad-aziz10",
   medium: "",
