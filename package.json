@@ -7,7 +7,7 @@
   "scripts": {
     "start": "parcel",
     "build": "parcel build",
-    "build-gh": "parcel build --public-url 'https://fahad-aziz10.github.io/profileCodespace",
+    "build-gh": "parcel build --public-url 'https://fahad-aziz10.github.io/profileCodespace'",
     "predeploy": "npm run build-gh",
     "deploy": "gh-pages -d dist"
   },
