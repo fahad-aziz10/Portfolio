@@ -1,11 +1,8 @@
 /**
  * Portfolio component
  *
- * Highlights some of  your creations. These can be designs, websites,
- * open source contributions, articles you've written and more.
- *
- * This is a great area for you to to continually add to and refine
- * as you continue to learn and create.
+ * Highlights some of your creations, including projects in power systems,
+ * embedded systems, AI automation, and web development.
  */
 
 import React from "react";
@@ -13,46 +10,41 @@ import React from "react";
 /**
  * Desk image
  *
- * Below is a sample desk image. Feel free to update this to an image of your choice,
- * updating below imageAltText to string that represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a photo you
- * freely use on your site.
+ * Updated with a more relevant image.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/engineering-workspace.jpg";
 
-const imageAltText = "desktop with books and laptop";
+const imageAltText = "Engineering workspace with circuit boards and a laptop";
 
 /**
  * Project list
  *
- * An array of objects that will be used to display for your project
- * links section. Below is a sample, update to reflect links you'd like to highlight.
+ * Highlighting projects related to Electrical Engineering, Embedded Systems, AI, and Web Development.
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Power System Load Flow Analysis",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Developed a load flow analysis tool using MATLAB and PSS/E to optimize power grid performance.",
+    url: "https://github.com/fahad-aziz10/power-loadflow-analysis",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Embedded System for Smart Energy Metering",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Designed a real-time energy monitoring system using ESP32 and IoT integration for smart metering applications.",
+    url: "https://github.com/fahad-aziz10/smart-energy-meter",
   },
   {
-    title: "My Resume Site",
+    title: "AI-Based Fault Detection in Power Systems",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Implemented a machine learning model in Python to predict faults in electrical networks, improving grid stability.",
+    url: "https://github.com/fahad-aziz10/ai-fault-detection",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "React Portfolio Website",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Built a personal portfolio website using React, showcasing projects, skills, and experience in electrical engineering and software development.",
+    url: "https://fahad-aziz10.github.io/Portfolio",
   },
 ];
 
@@ -60,18 +52,19 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
-      <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
+      <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{ height: "90%", width: "100%", objectFit: "cover", borderRadius: "8px" }}
             alt={imageAltText}
+            loading="lazy"
           />
         </div>
         <div className="container">
           {projectList.map((project) => (
             <div className="box" key={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
+              <a href={project.url} target="_blank" rel="noopener noreferrer" aria-label={`Visit project: ${project.title}`}>
                 <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
               </a>
               <p className="small">{project.description}</p>
