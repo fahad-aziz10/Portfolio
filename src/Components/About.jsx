@@ -23,20 +23,25 @@ const imageAltText = "purple and blue abstract background";
 /**
  * Sort description that expands on your title on the Home component.
  */
-const description =
-  "I am a dedicated Electrical Engineer with a Master's degree in Electrical Engineering from UET Lahore, specializing in Embedded Systems and holding multiple certifications in Machine Learning and Artificial Intelligence.";
 
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
+const description =
+  "I am a results-driven Electrical Engineer with a Master's degree from UET Lahore, specializing in Embedded Systems, Artificial Intelligence, and System Automation. With expertise in developing AI-powered solutions for industrial automation, smart devices, and IoT applications, I integrate cutting-edge technologies to optimize performance and efficiency. My strong background in Machine Learning, Deep Learning, and Embedded Development enables me to design intelligent, high-performance systems that drive innovation.";
+
 const skillsList = [
-  "Power Systems",
-  "Embedded Systems",
-  "Machine Learning",
-  "Quality Assurance",
-  "System Automation",
-  "Simulation Analysis",
+  "Embedded Systems & Firmware Development",
+  "AI & Machine Learning for Embedded Devices",
+  "IoT & Edge Computing",
+  "Computer Vision & Deep Learning",
+  "Automation & Control Systems",
+  "AI-Driven Predictive Maintenance",
+  "Low-Power Embedded Design",
+  "Microcontroller Programming (ARM, ESP32, STM32)",
+  "Sensor Integration & Signal Processing",
+  "Power System Analysis & Optimization",
+  "AI & Machine Learning in Energy Solutions",
+  "High-Performance PCB Design",
+  "Grid Modernization & Renewable Integration",
+  "Simulation & Modeling (MATLAB, PSS/E, PSCAD)",
 ];
 
 /**
@@ -45,7 +50,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "Looking ahead, my career goals revolve around challenging projects and exploring the intersection of electrical engineering and machine learning. I'm enthusiastic about contributing to cutting-edge innovations in the electrical engineering sector";
+  "My passion lies at the intersection of Embedded Systems and AI, where I strive to develop intelligent, high-performance solutions. I am driven by challenging projects that push the boundaries of innovation, whether in smart automation, IoT, or AI-powered systems. My goal is to contribute to groundbreaking advancements that shape the future of technology.";
 
 const About = () => {
   return (
